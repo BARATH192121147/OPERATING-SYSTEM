@@ -1,13 +1,12 @@
-
 #include<iostream>
 using namespace std
 void findWaitingTime(int processes[], int n,
 						int bt[], int wt[])
 {
-	// waiting time for first process is 0
+	
 	wt[0] = 0;
 
-	// calculating waiting time
+
 	for (int i = 1; i < n ; i++ )
 		wt[i] = bt[i-1] + wt[i-1] ;
 }
@@ -46,7 +45,7 @@ void findavgTime( int processes[], int n, int bt[])
 
 int main()
 {
-	//process id's
+
 	int processes[] = { 1, 2, 3};
 	int n = sizeof processes / sizeof processes[0];
 
